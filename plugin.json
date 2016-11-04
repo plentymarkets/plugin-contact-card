@@ -1,0 +1,10 @@
+{
+  "name"              :"ContactCard",
+  "description"       :"Plentymarkets plugin for the contact card",
+  "namespace"         :"ContactCard",
+  "author"            :"plentymarkets GmbH",
+  "keywords"          : ["plentymarkets", "plugins", "contact", "card", "template"],
+  "type"              :"template",
+  "require"           : [],
+  "serviceProvider"   :"ContactCard\\Providers\\ContactCardServiceProvider"
+}
