@@ -1,0 +1,32 @@
+[
+  {
+    "tab"                         : "Contact Data",
+    "key"                         : "contact.opening_times",
+    "label"                       : "Opening times",
+    "type"                        : "text",
+    "default"                     : "Monday - Friday, 00:00 - 24:00"
+  },
+  {
+    "tab"                         : "Contact Data",
+    "key"                         : "contact.show_data",
+    "label"                       : "Show in ContactCard",
+    "type"                        : "multi_select",
+    "possibleValues"              :
+    {
+      "name"                      : "Name",
+      "ceo"                       : "CEO",
+      "city"                      : "City",
+      "country"                   : "Country",
+      "email"                     : "Email",
+      "fax"                       : "Fax",
+      "fon"                       : "Fon",
+      "hotline"                   : "Hotline",
+      "street"                    : "Street",
+      "vatNumber"                 : "VAT number",
+      "zip"                       : "ZIP",
+      "timezone"                  : "Timezone",
+      "opening_times"             : "Opening times"
+    },
+    "default"                     : "street, zip, city, hotline, email, opening_times"
+  }
+]

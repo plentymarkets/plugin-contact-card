@@ -6,5 +6,13 @@
   "keywords"          : ["plentymarkets", "plugins", "contact", "card", "template"],
   "type"              :"template",
   "require"           : [],
-  "serviceProvider"   :"ContactCard\\Providers\\ContactCardServiceProvider"
+  "serviceProvider"   :"ContactCard\\Providers\\ContactCardServiceProvider",
+  "dataProviders"     :
+  [
+    {
+      "key":"ContactCard\\Containers\\ContactCardContainer",
+      "name":"ContactCard",
+      "description":""
+    }
+  ]
 }
