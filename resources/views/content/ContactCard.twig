@@ -15,22 +15,21 @@
 
 {% if showData == "all" %}
     {% set showData =
-        [
-            "name",
-            "ceo",
-            "city",
-            "country",
-            "email",
-            "fax",
-            "fon",
-            "hotline",
-            "street",
-            "vatNumber",
-            "zip",
-            "timezone",
-            "opening_times",
-        ]
-    %}
+    [
+    "name",
+    "ceo",
+    "city",
+    "country",
+    "email",
+    "fax",
+    "fon",
+    "hotline",
+    "street",
+    "vatNumber",
+    "zip",
+    "timezone",
+    "opening_times",
+    ] %}
 {% else %}
     {% set showData = showData|split(', ') %}
 {% endif %}
@@ -49,17 +48,29 @@
         <i class="fa fa-fw fa-map-marker" aria-hidden="true"></i>
         <span class="d-inline-block">
             {% if "name" in showData %}
-                {{ name }}
+                {{ name }}<br>
             {% endif %}
+
             {% if "ceo" in showData %}
-                <br> {{ ceo }}
+                {{ ceo }} <br>
             {% endif %}
+
             {% if "street" in showData %}
-                <br> {{ street }}
+                {{ street }} <br>
             {% endif %}
-            {% if "zip" in showData %}<br> {{ zip }}{% endif %} {% if "city" in showData %}{{ city }}{% endif %}
+
+            {% if "zip" in showData %}
+                {{ zip }}
+            {% endif %}
+            {% if "city" in showData %}
+                {{ city }}
+            {% endif %}
+            {% if "zip" in showData or "city" in showData %}
+                <br>
+            {% endif %}
+
             {% if "country" in showData %}
-                <br> {{ country }}
+                {{ country }}
             {% endif %}
         </span>
     </p>
