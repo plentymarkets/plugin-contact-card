@@ -22,6 +22,11 @@
       "key":"ContactCard\\Containers\\ContactCardContainer",
       "name":"Contact data",
       "description":"Display your contact data in the online store"
+    },
+    {
+      "key":"ContactCard\\Containers\\ContactCardMapContainer",
+      "name":"ContactCard Map",
+      "description":""
     }
   ]
 }

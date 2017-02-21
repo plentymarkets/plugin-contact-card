@@ -1,0 +1,60 @@
+{% set googleApiKey =   config("ContactCard.contact.api_key") %}
+{% set zip =            config("plenty.system.company.zip") %}
+{% set street =         config("plenty.system.company.street") %}
+{% set mapHeight =      config("ContactCard.contact.map_height") %}
+{% set mapWidth =       config("ContactCard.contact.map_width") %}
+
+<style>
+    #map {
+        height: {{ mapHeight }};
+        width: {{ mapWidth }};
+    }
+</style>
+
+<div id="map"></div>
+
+<div id="data-holder" style="visibility: hidden">{{ zip }} {{ street }}</div>
+
+<script>
+    function initMap()
+    {
+        var coordinates = {lat: -34.397, lng: 150.644};
+
+        var map = new google.maps.Map( document.getElementById( 'map' ),
+        {
+            zoom  : 16,
+            center: coordinates
+        });
+
+        var geocoder = new google.maps.Geocoder();
+
+        getLatLngByAddress(geocoder, map);
+    }
+
+    function getLatLngByAddress(geocoder, resultsMap)
+    {
+        var address = document.getElementById('data-holder').textContent || document.getElementById('data-holder').innerText;
+
+        geocoder.geocode({'address': address}, function(results, status)
+        {
+            if (status === google.maps.GeocoderStatus.OK)
+            {
+                resultsMap.setCenter(results[0].geometry.location);
+
+                var marker = new google.maps.Marker(
+                {
+                    map: resultsMap,
+                    position: results[0].geometry.location
+                });
+            }
+            else
+            {
+                console.log('Not possible to get Ltd and Lng for the given address. State: ' + status);
+            }
+        });
+    }
+</script>
+
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key={{ googleApiKey }}&callback=initMap">
+</script>
