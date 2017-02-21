@@ -3,31 +3,32 @@
 {% set street =         config("plenty.system.company.street") %}
 {% set mapHeight =      config("ContactCard.contact.map_height") %}
 {% set mapWidth =       config("ContactCard.contact.map_width") %}
+{% set mapZoom =       config("ContactCard.contact.map_zoom") %}
 
-<div class="maps"></div>
+<div class="contact-card-maps"></div>
 
 <script>
     function initMap()
     {
         var coordinates = {lat: -34.397, lng: 150.644};
 
-        var maps = document.getElementsByClassName('maps');
+        var maps = document.getElementsByClassName('contact-card-maps');
 
         for(var i = 0; i < maps.length; i++)
         {
             var elementToAddMap = maps.item(i);
 
             var mapElement = document.createElement("div");
-            mapElement.id = "map" + i.toString();
+            mapElement.id = "contact-card-map-" + i.toString();
             mapElement.setAttribute("style", "height: {{ mapHeight }}; width: {{ mapWidth }}");
 
-            if (!document.getElementById("map" + i.toString()))
+            if (!document.getElementById("contact-card-map-" + i.toString()))
             {
                 elementToAddMap.appendChild(mapElement);
 
-                var map = new google.maps.Map(document.getElementById("map" + i.toString()),
+                var map = new google.maps.Map(document.getElementById("contact-card-map-" + i.toString()),
                     {
-                        zoom  : 16,
+                        zoom  : {{ mapZoom }},
                         center: coordinates
                     });
 

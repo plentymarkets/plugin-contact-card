@@ -49,5 +49,12 @@
     "label"                       : "Map width",
     "type"                        : "text",
     "default"                     : "100%"
+  },
+  {
+    "tab"                         : "Contact Map",
+    "key"                         : "contact.map_zoom",
+    "label"                       : "Contact Map zoom",
+    "type"                        : "text",
+    "default"                     : "16"
   }
 ]
