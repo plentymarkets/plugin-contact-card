@@ -30,23 +30,23 @@
     "default"                     : "street, zip, city, hotline, email, opening_times"
   },
   {
-    "tab"                         : "Contact Map",
+    "tab"                         : "Map settings",
     "key"                         : "contact.api_key",
-    "label"                       : "Your Google API key",
+    "label"                       : "Google Maps API key",
     "type"                        : "text",
-    "default"                     : "API KEY"
+    "default"                     : "API key"
   },
   {
-    "tab"                         : "Contact Map",
+    "tab"                         : "Map settings",
     "key"                         : "contact.map_height",
-    "label"                       : "Contact Map height",
+    "label"                       : "Map height",
     "type"                        : "text",
     "default"                     : "400px"
   },
   {
-    "tab"                         : "Contact Map",
+    "tab"                         : "Map settings",
     "key"                         : "contact.map_width",
-    "label"                       : "Contact Map width",
+    "label"                       : "Map width",
     "type"                        : "text",
     "default"                     : "100%"
   }
