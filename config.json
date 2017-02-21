@@ -51,9 +51,9 @@
     "default"                     : "100%"
   },
   {
-    "tab"                         : "Contact Map",
+    "tab"                         : "Map settings",
     "key"                         : "contact.map_zoom",
-    "label"                       : "Contact Map zoom",
+    "label"                       : "Zoom level",
     "type"                        : "text",
     "default"                     : "16"
   }

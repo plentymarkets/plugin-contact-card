@@ -75,6 +75,10 @@ In addition to your contact data, it is possible to display your store location 
 <td><b>Map width</b></td>  
 <td>Enter the width of the map in pixels or percent.</td>
 </tr>
+<tr>
+<td><b>Zoom level</b></td>  
+<td>Enter the zoom level. For further information about the zoom level, refer to <a href="https://developers.google.com/maps/documentation/static-maps/intro?hl=en#Zoomlevels"><b>Zoom Levels</b></a>.</td>
+</tr>
 </tbody>
 <caption>Table 2: Setting up a Google Maps map</caption>
 </table>

@@ -75,6 +75,10 @@ Zusätzlich zu Ihren Kontaktdaten können Sie den Standort Ihres Geschäfts in e
 <td><b>Map width</b></td>  
 <td>Breite der Karte in Pixeln oder Prozent eingeben.</td>
 </tr>
+<tr>
+<td><b>Zoom level</b></td>  
+<td>Vergrößerungsstufe eingeben. Weitere Informationen zur Vergrößerungsstufe finden Sie unter <a href="https://developers.google.com/maps/documentation/static-maps/intro?hl=de#Zoomlevels" target="_blank"><b>Vergrößerungsstufen</b></a>.</td>
+</tr>
 </tbody>
 <caption>Tab. 2: Karte von Google Maps einrichten</caption>
 </table>
