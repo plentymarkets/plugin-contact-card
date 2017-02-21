@@ -1,8 +1,12 @@
 # Contact Card – Anzeige von Kontaktdaten im Webshop
 
-**Contact Card** ist ein Widget für plentymarkets 7 Webshops. Das Plugin erlaubt Ihnen Ihre Kontaktdaten an gewünschter Stelle im Webshop anzuzeigen. Dafür werden die Daten über Template-Container in das Template-Plugin eingebunden. Zudem ist es möglich den Standort Ihres Geschäfts in einer Karte von Google Maps im Webshop anzuzeigen.
+**Contact Card** ist ein Widget für plentymarkets 7 Webshops. Das Plugin erlaubt Ihnen Ihre Kontaktdaten an gewünschter Stelle im Webshop anzuzeigen.
 
 ## Contact Card in plentymarkets einrichten
+
+Die im plentymarkets System hinterlegten Stammdaten werden über Template-Container in das Template-Plugin eingebunden. Zudem ist es möglich den Standort Ihres Geschäfts in einer Karte von Google Maps im Webshop anzuzeigen.
+
+### Kontaktdaten aktivieren
 
 Sie können wählen, welche Kontaktdaten Sie in Ihrem Webshop anzeigen möchten. Wenn Sie neben Ihrem Webshop ein Ladengeschäft betreiben, können Sie zudem die Öffnungszeiten Ihres Geschäfts anzeigen.
 
@@ -35,6 +39,8 @@ Sie können wählen, welche Kontaktdaten Sie in Ihrem Webshop anzeigen möchten.
 </tbody>
 <caption>Tab. 1: Kontaktdaten aktivieren</caption>
 </table>
+
+### Karte von Google Maps einrichten
 
 Zusätzlich zu Ihren Kontaktdaten können Sie den Standort Ihres Geschäfts in einer Karte von Google Maps im Webshop anzeigen. Sie benötigen dafür einen [API-Schlüssel](https://developers.google.com/maps/documentation/geocoding/get-api-key?hl=de) von Google Maps.
 
