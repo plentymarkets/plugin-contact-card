@@ -1,4 +1,4 @@
-# Contact Card – Anzeige für Kontaktdaten im Webshop
+# Contact Card – Anzeige von Kontaktdaten im Webshop
 
 **Contact Card** ist ein Widget für plentymarkets 7 Webshops. Das Plugin erlaubt Ihnen Ihre Kontaktdaten an gewünschter Stelle im Webshop anzuzeigen. Dafür werden die Daten über Template-Container in das Template-Plugin eingebunden.
 
