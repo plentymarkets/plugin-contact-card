@@ -100,3 +100,7 @@ In addition to your contact data, it is possible to display a Google Maps map wi
 3. Go to the **Google Maps** area. 
 4. Select one, several or **ALL** containers in which you want to display the map, e.g. **Footer: Row 2 container**. 
 5. **Save** the settings.<br /> → The map will be displayed in the selected containers in the online store.
+
+## License
+
+This project is licensed under the GNU AFFERO GENERAL PUBLIC LICENSE. – find further information in the [LICENSE.md](https://github.com/plentymarkets/plugin-contact-card/blob/master/LICENSE.md).

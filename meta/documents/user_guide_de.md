@@ -106,3 +106,7 @@ Zusätzlich zu Ihren Kontaktdaten können Sie eine Karte von Google Maps mit dem
 3. Wählen Sie den Bereich **Google Maps**.
 4. Wählen Sie einen, mehrere oder **ALLE** Container, in denen Sie die Karte anzeigen möchten, z.B. **Footer: Row 2 container**.
 5. **Speichern** Sie die Einstellungen.<br /> → Die Karte wird im gewählten Container im Webshop angezeigt.
+
+## Lizenz
+
+Das gesamte Projekt unterliegt der GNU AFFERO GENERAL PUBLIC LICENSE – weitere Informationen finden Sie in der [LICENSE.md](https://github.com/plentymarkets/plugin-contact-card/blob/master/LICENSE.md).
