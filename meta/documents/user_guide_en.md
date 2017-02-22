@@ -12,13 +12,11 @@ You can choose which contact data to display in the online store. If you also ha
 
 ##### Activating contact data:
 
-
 1. Go to **Start » Plugins**.<br /> → The plugin overview will open. 
 2. Click on **ContactCard**.<br /> → The plugin will open in a new tab. 
 3. Click on **Configuration** in the directory tree.<br /> → The **Contact data** is pre-selected. 
 4. Carry out the settings. Pay attention to the information given in table 1. 
 5. **Save** the settings.<br /> → The selected contact data is activated.
-
 
 <table>
 <thead>
@@ -46,14 +44,12 @@ In addition to your contact data, it is possible to display your store location 
 
 ##### Setting up a Google Maps map:
 
-
 1. Go to **Start » Plugins**.<br /> → The plugin overview will open. 
 2. Click on **ContactCard**.<br /> → The plugin will open in a new tab. 
 3. Click on **Configuration** in the directory tree. 
 4. Click on the **Map settings** tab. 
 5. Carry out the settings. Pay attention to the information given in table 2. 
 6. **Save** the settings.
-
 
 <table>
 <thead>
@@ -92,9 +88,8 @@ You have multiple options to integrate your contact data in your online store. F
 1. Click on **Start» Plugins**. 
 2. Click on the **Content** tab. 
 3. Go to the **Contact data** area. 
-4. Select one, several or **ALL** in which you want to display your contact data, e.g. **Footer: Row 1 container**. 
+4. Select one, several or **ALL** containers in which you want to display your contact data, e.g. **Footer: Row 1 container**. 
 5. **Save** the settings.<br /> → The contact data will be displayed in the selected containers in the online store.
-
 
 In addition to your contact data, it is possible to display a Google Maps map with the location of your store in your online store. 
 
@@ -103,5 +98,5 @@ In addition to your contact data, it is possible to display a Google Maps map wi
 1. Click on **Start» Plugins**. 
 2. Click on the **Content** tab. 
 3. Go to the **Google Maps** area. 
-4. Select one, several or **ALL** in which you want to display the map, e.g. **Footer: Row 2 container**. 
+4. Select one, several or **ALL** containers in which you want to display the map, e.g. **Footer: Row 2 container**. 
 5. **Save** the settings.<br /> → The map will be displayed in the selected containers in the online store.
