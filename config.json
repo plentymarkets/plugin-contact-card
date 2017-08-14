@@ -1,8 +1,15 @@
 [
   {
     "tab"                         : "Contact data",
-    "key"                         : "contact.opening_times",
-    "label"                       : "Opening hours",
+    "key"                         : "contact.opening_times_de",
+    "label"                       : "Opening hours (DE)",
+    "type"                        : "text",
+    "default"                     : "Montag - Freitag, 00:00 - 24:00"
+  },
+  {
+    "tab"                         : "Contact data",
+    "key"                         : "contact.opening_times_en",
+    "label"                       : "Opening hours (EN)",
     "type"                        : "text",
     "default"                     : "Monday - Friday, 00:00 - 24:00"
   },
