@@ -1,0 +1,80 @@
+{% set googleApiKey =   config("ContactCard.contact.api_key") %}
+{% set zip				= config("system.company.zip") %}
+{% set street 			= config("system.company.street") %}
+{% set mapHeight =      config("ContactCard.contact.map_height") %}
+{% set mapWidth =       config("ContactCard.contact.map_width") %}
+{% set mapZoom =       config("ContactCard.contact.map_zoom") %}
+
+<script>
+    function initMap()
+    {
+        var coordinates = {lat: -34.397, lng: 150.644};
+
+        var maps = document.getElementsByClassName('contact-card-maps');
+
+        for(var i = 0; i < maps.length; i++)
+        {
+            var elementToAddMap = maps.item(i);
+
+            var mapElement = document.createElement("div");
+            mapElement.id = "contact-card-map-" + i.toString();
+            mapElement.setAttribute("style", "height: {{ mapHeight }}; width: {{ mapWidth }}");
+
+            if (!document.getElementById("contact-card-map-" + i.toString()))
+            {
+                elementToAddMap.appendChild(mapElement);
+
+                var map = new google.maps.Map(document.getElementById("contact-card-map-" + i.toString()),
+                    {
+                        zoom  : {{ mapZoom }},
+                        center: coordinates
+                    });
+
+                var geocoder = new google.maps.Geocoder();
+
+                getLatLngByAddress(geocoder, map);
+            }
+        }
+    }
+
+    function getLatLngByAddress(geocoder, resultsMap)
+    {
+        var addressData = "{{ zip }} {{ street }}";
+
+        geocoder.geocode({'address': addressData}, function(results, status)
+        {
+            if (status === google.maps.GeocoderStatus.OK)
+            {
+                resultsMap.setCenter(results[0].geometry.location);
+
+                var marker = new google.maps.Marker(
+                {
+                    map: resultsMap,
+                    position: results[0].geometry.location
+                });
+            }
+            else
+            {
+                console.log('Not possible to get Ltd and Lng for the given address. State: ' + status);
+            }
+        });
+    }
+</script>
+
+<script async defer>
+
+    if (!document.getElementById('maps-api'))
+    {
+        addScript("https://maps.googleapis.com/maps/api/js?key={{ googleApiKey }}&callback=initMap");
+    }
+
+    function addScript(path)
+    {
+        var head = document.getElementsByTagName("head")[0];
+        var s = document.createElement("script");
+        s.type = "text/javascript";
+        s.src = path;
+        s.id = "maps-api";
+        head.appendChild(s);
+    }
+</script>

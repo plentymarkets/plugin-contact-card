@@ -1,67 +1,125 @@
-[
-  {
-    "tab"                         : "Contact data",
-    "key"                         : "contact.opening_times_de",
-    "label"                       : "Opening hours (DE)",
-    "type"                        : "text",
-    "default"                     : "Montag - Freitag, 00:00 - 24:00"
-  },
-  {
-    "tab"                         : "Contact data",
-    "key"                         : "contact.opening_times_en",
-    "label"                       : "Opening hours (EN)",
-    "type"                        : "text",
-    "default"                     : "Monday - Friday, 00:00 - 24:00"
-  },
-  {
-    "tab"                         : "Contact data",
-    "key"                         : "contact.show_data",
-    "label"                       : "Show contact data",
-    "type"                        : "multi_select",
-    "possibleValues"              :
-    {
-      "name"                      : "Company",
-      "ceo"                       : "CEO",
-      "city"                      : "City",
-      "country"                   : "Country",
-      "email"                     : "Email",
-      "fax"                       : "Fax",
-      "fon"                       : "Phone",
-      "hotline"                   : "Hotline",
-      "street"                    : "Street",
-      "vatNumber"                 : "VAT number",
-      "zip"                       : "ZIP",
-      "timezone"                  : "Time zone",
-      "opening_times"             : "Opening hours"
-    },
-    "default"                     : "street, zip, city, hotline, email, opening_times"
-  },
-  {
-    "tab"                         : "Map settings",
-    "key"                         : "contact.api_key",
-    "label"                       : "Google Maps API key",
-    "type"                        : "text",
-    "default"                     : "API key"
-  },
-  {
-    "tab"                         : "Map settings",
-    "key"                         : "contact.map_height",
-    "label"                       : "Map height",
-    "type"                        : "text",
-    "default"                     : "400px"
-  },
-  {
-    "tab"                         : "Map settings",
-    "key"                         : "contact.map_width",
-    "label"                       : "Map width",
-    "type"                        : "text",
-    "default"                     : "100%"
-  },
-  {
-    "tab"                         : "Map settings",
-    "key"                         : "contact.map_zoom",
-    "label"                       : "Zoom level",
-    "type"                        : "text",
-    "default"                     : "16"
+{
+  "formatVersion": 1,
+  "menu": {
+      "Config.ContactDataTab": {
+          "label": "Config.ContactDataTab",
+          "formFields": {
+              "contact.opening_times_de": {
+                  "type": "inputText",
+                  "required": false,
+                  "label": "Config.contactOpeningTimesDeLabel",
+                  "options": {
+                      "defaultValue": "Montag - Freitag, 00:00 - 24:00"
+                  }
+              },
+              "contact.opening_times_en": {
+                  "type": "inputText",
+                  "required": false,
+                  "label": "Config.contactOpeningTimesEnLabel",
+                  "options": {
+                      "defaultValue": "Monday - Friday, 00:00 - 24:00"
+                  }
+              },
+              "contact.show_data": {
+                  "type": "multiCheckBox",
+                  "required": false,
+                  "label": "Config.contactShowDataLabel",
+                  "options": {
+                      "defaultValue": "street, zip, city, hotline, email, opening_times",
+                      "checkBoxValues": [
+                          {
+                              "value": "name",
+                              "caption": "Config.contactShowDataPossibleValueName"
+                          },
+                          {
+                              "value": "ceo",
+                              "caption": "Config.contactShowDataPossibleValueCeo"
+                          },
+                          {
+                              "value": "city",
+                              "caption": "Config.contactShowDataPossibleValueCity"
+                          },
+                          {
+                              "value": "country",
+                              "caption": "Config.contactShowDataPossibleValueCountry"
+                          },
+                          {
+                              "value": "email",
+                              "caption": "Config.contactShowDataPossibleValueEmail"
+                          },
+                          {
+                              "value": "fax",
+                              "caption": "Config.contactShowDataPossibleValueFax"
+                          },
+                          {
+                              "value": "fon",
+                              "caption": "Config.contactShowDataPossibleValueFon"
+                          },
+                          {
+                              "value": "hotline",
+                              "caption": "Config.contactShowDataPossibleValueHotline"
+                          },
+                          {
+                              "value": "street",
+                              "caption": "Config.contactShowDataPossibleValueStreet"
+                          },
+                          {
+                              "value": "vatNumber",
+                              "caption": "Config.contactShowDataPossibleValueVatNumber"
+                          },
+                          {
+                              "value": "zip",
+                              "caption": "Config.contactShowDataPossibleValueZip"
+                          },
+                          {
+                              "value": "timezone",
+                              "caption": "Config.contactShowDataPossibleValueTimezone"
+                          },
+                          {
+                              "value": "opening_times",
+                              "caption": "Config.contactShowDataPossibleValueOpeningTimes"
+                          }
+                      ]
+                  }
+              }
+          }
+      },
+      "Config.MapSettingsTab": {
+          "label": "Config.MapSettingsTab",
+          "formFields": {
+              "contact.api_key": {
+                  "type": "inputText",
+                  "required": false,
+                  "label": "Config.contactApiKeyLabel",
+                  "options": {
+                      "defaultValue": "API key"
+                  }
+              },
+              "contact.map_height": {
+                  "type": "inputText",
+                  "required": false,
+                  "label": "Config.contactMapHeightLabel",
+                  "options": {
+                      "defaultValue": "400px"
+                  }
+              },
+              "contact.map_width": {
+                  "type": "inputText",
+                  "required": false,
+                  "label": "Config.contactMapWidthLabel",
+                  "options": {
+                      "defaultValue": "100%"
+                  }
+              },
+              "contact.map_zoom": {
+                  "type": "inputText",
+                  "required": false,
+                  "label": "Config.contactMapZoomLabel",
+                  "options": {
+                      "defaultValue": "16"
+                  }
+              }
+          }
+      }
   }
-]
+}
