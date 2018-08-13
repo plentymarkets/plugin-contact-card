@@ -2,7 +2,7 @@
 
 namespace ContactCard\Providers;
 
-
+use Plenty\Plugin\Templates\Twig;
 use Plenty\Plugin\ServiceProvider;
 use IO\Helper\ResourceContainer;
 use Plenty\Plugin\Events\Dispatcher;
