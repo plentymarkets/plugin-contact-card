@@ -2,25 +2,25 @@
 
 ## v1.1.0 (2018-08-14)
 
-### Hinzugefügt
+### Added
 
-- Die Konfiguration ist nun Mehrsprachig.
+- The configuration is now multilingual.
 
-### Geändert
+### Changed
 
-- Das Plugin wurde auf die benötigte Struktur angepasst, um auf Ceres 2 (Vue2) zu funktionieren.
+- The plugin has been adjusted to the required structure so that it works on Ceres 2 (Vue2).
 
-### Behoben
+### Fixed
 
-- Es wurde ein Fehler behoben bei dem als Standort in Google Maps, fälschlicherweise Australien angezeigt wurde.
-- Es wurde ein Fehler behoben wodurch die Konfiguration des Plugins nicht mehr zu sehen war.
+- An error that erroneously displayed Australia as location in Google Maps was fixed.
+- An error that caused the invisibility of the plugin configuration was fixed.
 
 
 ## v1.0.1 (2017-08-22)
 
 ### Added
 
-- Opening times can be displayed in English and German.
+- Opening times can now be displayed in English and German.
 
 ### Fixed
 

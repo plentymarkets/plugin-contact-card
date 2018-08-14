@@ -4,16 +4,16 @@
 
 ### Hinzugefügt
 
-- Die Konfiguration ist nun Mehrsprachig.
+- Die Konfiguration ist nun mehrsprachig.
 
 ### Geändert
 
-- Das Plugin wurde auf die benötigte Struktur angepasst, um auf Ceres 2 (Vue2) zu funktionieren.
+- Das Plugin wurde auf die benötigte Struktur angepasst, damit es auf Ceres 2 (Vue2) funktioniert.
 
 ### Behoben
 
-- Es wurde ein Fehler behoben bei dem als Standort in Google Maps, fälschlicherweise Australien angezeigt wurde.
-- Es wurde ein Fehler behoben wodurch die Konfiguration des Plugins nicht mehr zu sehen war.
+- Es wurde ein Fehler behoben, bei dem als Standort in Google Maps fälschlicherweise Australien angezeigt wurde.
+- Es wurde ein Fehler behoben, wodurch die Konfiguration des Plugins nicht mehr zu sehen war.
 
 ## v1.0.1 (2017-08-22)
 
